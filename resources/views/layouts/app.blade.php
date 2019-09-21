@@ -42,6 +42,9 @@ rel='stylesheet' type='text/css'>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                                <a class="nav-link" href="{{ route('createReportStep1') }}"> Create a Report</a>
+                    </li>
 
                     </ul>
 

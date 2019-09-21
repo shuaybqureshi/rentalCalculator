@@ -8,23 +8,25 @@
                                 <!-- Stepers Wrapper -->
                                 <ul class="stepper stepper-horizontal">
                                     <!-- First Step -->
-                                    <li class="">
+
+                                <li class="{{ (Request::path()=='createReportStep1') ? 'active' : '' }}">
                                         <a href="#!">
                                             <span class="circle">1</span><br>
                                             <span class="label">Property Information</span>
                                         </a>
                                     </li>
-
+{{-- {{Request::path('createReporstStep1')}} --}}
+{{-- {{Request::url()}} --}}
                                     <!-- Second Step -->
-                                    <li class="">
+                                    <li class="{{(Request::path()=='createReportStep2')? 'active' : '' }}">
                                         <a href="#!">
                                             <span class="circle">2</span><br>
                                             <span class="label">Purchase Details</span>
                                         </a>
                                     </li>
                                     <!-- Second Step -->
-                                    <li class="">
-                                        <a href="#!">
+                                    <li class="{{(Request::path()=='createReportStep3') ? 'active' : '' }}">
+                                    <a href="#!">
                                             <span class="circle">3</span> <br>
                                             <span class="label">Expenses</span>
                                         </a>

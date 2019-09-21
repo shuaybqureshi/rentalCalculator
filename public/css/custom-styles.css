@@ -39,7 +39,8 @@ label{
     margin:1rem;
 }
 
-.calc-form input[type=text]{
+.calc-form input[type=text],.calc-form input[type=number]{
+    /* .step-2 input{ */
     height: 48px;
     font-size: 1rem;
     padding: 0 1rem;

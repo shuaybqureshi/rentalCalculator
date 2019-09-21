@@ -17,16 +17,17 @@ class MakeExpIncTable extends Migration
             $table->bigIncrements('id');
             $table->integer('report_id');
             $table->float('rental_income');
-            $table->float('other_income');
-            $table->float('electricity');
-            $table->float('water');
-            $table->float('gas');
-            $table->float('insurance');
-            $table->float('taxes');
-            $table->float('other');
-            $table->float('vacancy');
-            $table->float('capex');
-            $table->float('management');
+            $table->float('other_income')->default(0);
+            $table->float('electricity')->default(0);
+            $table->float('water')->default(0);
+            $table->float('gas')->default(0);
+            $table->float('insurance')->default(0);
+            $table->float('pmi')->default(0);
+            $table->float('taxes')->default(0);
+            $table->float('other')->default(0);
+            $table->float('vacancy')->default(0);
+            $table->float('capex')->default(0);
+            $table->float('management')->default(0);
             $table->timestamps();
         });
     }

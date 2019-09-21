@@ -8,7 +8,7 @@ class exp_inc extends Model
 {
     protected $table="exp_inc";
     protected $fillable = [
-        'report_id', 'rental_income', 'other_income','electricity' , 'water','gas', 'report_id', 
+        'report_id', 'rental_income', 'other_income','electricity' , 'water','gas', 'report_id', 'pmi',
         'insurance', 'taxes','other' , 'vacancy','capex', 'management' 
     ];  
 }
